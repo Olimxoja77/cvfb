@@ -1,6 +1,6 @@
 let btn = document.querySelector("div");
 
-fetch("https://fakestoreapi.com/products?limit=10")
+fetch("https://673870e84eb22e24fca7ef0c.mockapi.io/api/v1/contact")
   .then((response) => response.json())
   .then((data) => {
     data.forEach((item) => {
@@ -11,7 +11,6 @@ fetch("https://fakestoreapi.com/products?limit=10")
             <h3>${item.name}</h3>
             <p><strong>id:</strong> ${item.id}</p>
             <p><strong>Number:</strong> ${item.number}</p>
-            <img>${}</img>
           `;
       btn.appendChild(userDiv);
     });
